@@ -1,0 +1,74 @@
+[
+  {
+    "input": {
+      "ordersFile": "src/main/resources/self-test-data/complete-by/orders.json",
+      "storeFile": "src/main/resources/self-test-data/complete-by/store.json"
+    },
+    "expectedOutput": [
+      "P1 order-1 09:00"
+    ]
+  },
+  {
+    "input": {
+      "ordersFile": "src/main/resources/self-test-data/isf-end-time/orders.json",
+      "storeFile": "src/main/resources/self-test-data/isf-end-time/store.json"
+    },
+    "expectedOutput": [
+      "P1 order-1 09:00"
+    ]
+  },
+  {
+    "input": {
+      "ordersFile": "src/main/resources/self-test-data/optimize-order-count/orders.json",
+      "storeFile": "src/main/resources/self-test-data/optimize-order-count/store.json"
+    },
+    "expectedOutput": [
+      "P1 order-2 09:00",
+      "P1 order-3 09:15"
+    ]
+  },
+  {
+    "input": {
+      "ordersFile": "src/main/resources/self-test-data/any-order-length-is-ok/orders.json",
+      "storeFile": "src/main/resources/self-test-data/any-order-length-is-ok/store.json"
+    },
+    "expectedOutput": [
+      "P1 order-2 09:00"
+    ]
+  },
+  {
+    "input": {
+      "ordersFile": "src/main/resources/self-test-data/advanced-allocation/orders.json",
+      "storeFile": "src/main/resources/self-test-data/advanced-allocation/store.json"
+    },
+    "expectedOutput": [
+      "P1 order-1 09:00",
+      "P2 order-2 09:00",
+      "P1 order-5 09:15",
+      "P2 order-3 09:30",
+      "P2 order-4 09:45",
+      "P2 order-6 10:00",
+      "P1 order-7 10:15"
+    ]
+  },
+  {
+    "input": {
+      "ordersFile": "src/main/resources/self-test-data/optimize-order-value/orders.json",
+      "storeFile": "src/main/resources/self-test-data/optimize-order-value/store.json"
+    },
+    "expectedOutput": [
+      "P1 order-1 09:00"
+    ]
+  },
+  {
+    "input": {
+      "ordersFile": "src/main/resources/self-test-data/advanced-optimize-order-value/orders.json",
+      "storeFile": "src/main/resources/self-test-data/advanced-optimize-order-value/store.json"
+    },
+    "expectedOutput": [
+      "P1 order-4 09:00",
+      "P2 order-1 09:00",
+      "P2 order-3 09:15"
+    ]
+  }
+]
